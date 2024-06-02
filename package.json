@@ -1,0 +1,11 @@
+{
+    "name": "blue-color-clicker",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "tsc"
+    },
+    "devDependencies": {
+      "typescript": "^4.3.5"
+    }
+  }
+  

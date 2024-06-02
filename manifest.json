@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Blue Color Clicker",
+  "version": "1.0",
+  "description": "Detects blue color on the page and clicks it.",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "dist/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["dist/content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}
